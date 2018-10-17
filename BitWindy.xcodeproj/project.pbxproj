@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B348FCBE2175087C00E016C5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B348FCBD2175087C00E016C5 /* main.cpp */; };
+		B348FCDA217761F600E016C5 /* sha1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B348FCD9217761F600E016C5 /* sha1.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,13 @@
 /* Begin PBXFileReference section */
 		B348FCBA2175087C00E016C5 /* BitWindy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BitWindy; sourceTree = BUILT_PRODUCTS_DIR; };
 		B348FCBD2175087C00E016C5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B348FCD7217760C000E016C5 /* deelx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = deelx.h; sourceTree = "<group>"; };
+		B348FCD8217761DC00E016C5 /* sha1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		B348FCD9217761F600E016C5 /* sha1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sha1.cpp; sourceTree = "<group>"; };
+		B348FCDC217763D600E016C5 /* common.h */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
+		B348FCDD217764F500E016C5 /* MyBitTorrent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyBitTorrent.h; sourceTree = "<group>"; };
+		B348FCDF217765CE00E016C5 /* TorrentParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TorrentParser.h; sourceTree = "<group>"; };
+		B348FCE121776C6F00E016C5 /* util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +66,23 @@
 			isa = PBXGroup;
 			children = (
 				B348FCBD2175087C00E016C5 /* main.cpp */,
+				B348FCDB2177638E00E016C5 /* lib */,
+				B348FCDC217763D600E016C5 /* common.h */,
+				B348FCDD217764F500E016C5 /* MyBitTorrent.h */,
+				B348FCDF217765CE00E016C5 /* TorrentParser.h */,
+				B348FCE121776C6F00E016C5 /* util.h */,
 			);
 			path = BitWindy;
+			sourceTree = "<group>";
+		};
+		B348FCDB2177638E00E016C5 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				B348FCD8217761DC00E016C5 /* sha1.h */,
+				B348FCD7217760C000E016C5 /* deelx.h */,
+				B348FCD9217761F600E016C5 /* sha1.cpp */,
+			);
+			path = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B348FCDA217761F600E016C5 /* sha1.cpp in Sources */,
 				B348FCBE2175087C00E016C5 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,6 +188,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -222,6 +247,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
